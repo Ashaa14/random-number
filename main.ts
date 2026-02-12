@@ -48,10 +48,8 @@ function RollDice () {
     list[randint(0, 5)].showImage(0)
 }
 input.onGesture(Gesture.Shake, function () {
-    DiceValue = randint(0, 6)
-    basic.showNumber(DiceValue)
+    RollDice()
 })
-let DiceValue = 0
 let list: Image[] = []
 SetDicePattern()
 RollDice()
